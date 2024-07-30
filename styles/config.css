@@ -1,0 +1,130 @@
+.configContainer {
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  place-items: center;
+}
+
+.configContainer fieldset {
+  width: 48rem;
+  padding: 3.2rem;
+  border-radius: 0.8rem;
+  border: none;
+  background: white;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.configContainer h2 {
+  font-size: 3.2rem;
+  margin-top: 0.8rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  border: none;
+  background: none;
+  transition: 200ms;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.configContainer form {
+  margin-top: 2.4rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.configContainer form section {
+  margin-top: 1.6rem;
+}
+
+.configContainer label {
+  width: 28rem;
+  display: inline-block;
+  text-align: left;
+}
+
+.configContainer input {
+  padding: 0.4rem;
+  width: 6.4rem;
+  text-align: center;
+}
+
+.configContainer input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.pdfImage {
+  width: 2rem;
+  position: relative;
+  inset: 0.4rem 0 0 0.4rem;
+}
+
+.newBingoButton {
+  margin-top: 4.8rem;
+  width: 22rem;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0.05rem 0.05rem 0.1rem black;
+  background: linear-gradient(135deg, #00bb00, #00bb00bb);
+  box-shadow: 0.05rem 0.05rem 0.2rem black;
+  transition: 200ms;
+}
+
+.newBingoButton:hover {
+  cursor: pointer;
+  background: linear-gradient(115deg, #00aa00, #00aa00bb);
+}
+
+@media (max-width: 480px) {
+  .configContainer fieldset {
+    width: 32rem;
+    padding: 1.6rem 0 2.4rem;
+  }
+
+  .configContainer h2 {
+    font-size: 2rem;
+    margin-top: 1.6rem;
+  }
+
+  .closeButton {
+    top: 1.2rem;
+    right: 1.2rem;
+  }
+
+  .configContainer form {
+    margin-top: 0.8rem;
+  }
+
+  .configContainer form section {
+    margin-top: 2rem;
+  }
+
+  .configContainer label {
+    text-align: center;
+  }
+
+  .configContainer input {
+    display: flex;
+    margin: 0.8rem auto;
+  }
+
+  .newBingoButton {
+    margin-top: 3.6rem;
+    width: 16rem;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}
